@@ -5,6 +5,14 @@
 Raspberry watchdog
 
 Send a periodic notification to insure the system is up and running
+
+can be put in a cron job
+
+sudo crontab -e
+
+add the following line
+
+0 13 * * * /home/pi/pushover/status.py
 """
 
 import os
